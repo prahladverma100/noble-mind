@@ -17,6 +17,7 @@ export default function Home() {
          once: true,
        });
      }, [])
+  const height = window.innerHeight;
   return ( <div className=" overflow-hidden">
     <Header />
     <AboutUs />
