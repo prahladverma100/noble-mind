@@ -7,12 +7,12 @@ import { Star } from './Icon'
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [Show, setShow] = useState(false);
-  if (Show === true) {
-    document.body.classList.add("max-md:overflow-hidden");
-  }
-  else {
-    document.body.classList.remove("max-md:overflow-hidden");
-  };
+  // if (Show === true) {
+  //   document.body.classList.add("max-md:overflow-hidden");
+  // }
+  // else {
+  //   document.body.classList.remove("max-md:overflow-hidden");
+  // };
   return (
     <div className=' bg_img bg-no-repeat min-h-[810px] bg-center relative' id='home'>
       <Image className=' absolute left-[1%] bottom-0' src={'/images/png/trangel.png'} width={70} height={95} alt="trangel" />
