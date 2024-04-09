@@ -5,14 +5,15 @@ import Image from 'next/image'
 import { Star } from './Icon'
 
 const Header = () => {
-  const [isOpen, setOpen] = useState(false);
-  const [Show, setShow] = useState(false);
-  // if (Show === true) {
-  //   document.body.classList.add("max-md:overflow-hidden");
-  // }
-  // else {
-  //   document.body.classList.remove("max-md:overflow-hidden");
-  // };
+  const Myarray =
+    [{ link: 'home' },
+    { link: 'home' },
+    { link: 'home' },
+    { link: 'home' },
+    { link: 'home' },
+    { link: 'home' },
+    ];
+
   return (
     <div className=' bg_img bg-no-repeat min-h-[810px] bg-center relative' id='home'>
       <Image className=' absolute left-[1%] bottom-0' src={'/images/png/trangel.png'} width={70} height={95} alt="trangel" />
@@ -21,20 +22,10 @@ const Header = () => {
           <div className=' cursor-pointer'>
             <Image src={'/images/png/noble_logo.png'} width={221} height={38} alt="logo" />
           </div>
-          <ul className={`flex  justify-center gap-6 ${Show ? "left-0" : "left-[-100%]"} h-full max-lg:w-full bg-white flex-col lg:flex-row top-0 text-center z-20    items-center duration-500 fixed lg:static`}>
-            <li><a href="#home" onClick={() => { setShow(false); setOpen(false) }} className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>Home</a></li>
-            <li><a href="#About" onClick={() => { setShow(false); setOpen(false) }} className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>About Us</a></li>
-            <li><a href="#Services" onClick={() => { setShow(false); setOpen(false) }} className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>Services</a></li>
-            <li><a href="#Choose" onClick={() => { setShow(false); setOpen(false) }} className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>Why Choose Us</a></li>
-            <li><a href="#Blogs" onClick={() => { setShow(false); setOpen(false) }} className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>Blogs</a></li>
-            <li><a href="#FAQ" onClick={() => { setShow(false); setOpen(false) }} className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>FAQ</a></li>
-            <div className='buttons-wrapper'><button className='py-[14px] px-6 ms-4 rounded-[4px] font-Outfit font-semibold  text-white bg-[#995EEC] click-btn btn_style'>Contact Us</button></div>
-          </ul>
-          <div className="z-30 lg:hidden " onClick={() => setShow(!Show)}>
-            <button className="{show?} text-[black]">
-              <Hamburger toggled={isOpen} toggle={setOpen} />
-            </button>
-          </div>
+          <ul className=' flex items-center gap-5'>
+            {Myarray.map((event, index) => (
+              <li><a href="#About" className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>{event.link}</a></li>
+            ))}  <div className='buttons-wrapper'><button className='py-[14px] px-6 ms-4 rounded-[4px] font-Outfit font-semibold  text-white bg-[#995EEC] click-btn btn_style'>Contact Us</button></div> </ul>
         </div>
         <div className=' flex-row lg:pt-[138px] pt-5' data-aos="fade-right">
           <div className=' lg:w-7/12 w-full'>

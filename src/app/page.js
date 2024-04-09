@@ -5,11 +5,11 @@ import ContactUs from "@/components/ContactUs";
 import Frequently from "@/components/Frequently";
 import Header from "@/components/Header";
 import LastSection from "@/components/LastSection";
-import BackToTop from "@/components/common/BackToTop";
+// import BackToTop from "@/components/common/BackToTop";
   import {useEffect} from 'react';
   import Aos from 'aos';
   import "aos/dist/aos.css"
-import Preloader from "@/components/common/Preloader";
+// import Preloader from "@/components/common/Preloader";
 export default function Home() {
      useEffect(() => {
        Aos.init({
@@ -17,16 +17,16 @@ export default function Home() {
          once: true,
        });
      }, [])
-  const height = window.innerHeight;
-  return ( <div className=" overflow-hidden">
+ 
+  return ( <div className="">
     <Header />
     <AboutUs />
     <ChooseUs/>
     < ContactUs />
     <Frequently />
     <LastSection />
-    < BackToTop />
-    <Preloader/>
+    {/* < BackToTop /> */}
+    {/* <Preloader/> */}
     </div>
   );
 }
