@@ -4,25 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide.slick-active.slick-current div .hov_active {
-    border-radius: 18px;
-    border: solid #a854e9 !important;
-    border-width: 1px 1px 5px !important;
-    transition: all .3s linear !important;
-    outline: none !important;
-}
 
+* {
+    scroll-behavior: smooth;
+}
 .bg_img {
     background-image: url('/images/png/hero_img.png') !important;
     background-size: contain;
     background-image: none !important;
-}
-.overflow_hidden {
-    overflow: hidden !important;
-}
-html,
-body {
-    scroll-behavior: smooth;
 }
 
 .bg_img1 {
@@ -48,13 +37,13 @@ body {
     justify-content: center !important;
 }
 
-@media (min-width:1024px) {
-    .bg_img {
-        background-image: url('/images/png/hero_img.png') !important;
-        background-size: contain;
-    }
+.slick-slide.slick-active.slick-current div .hov_active {
+    border-radius: 18px;
+    border: solid #a854e9 !important;
+    border-width: 1px 1px 5px !important;
+    transition: all .3s linear !important;
+    outline: none !important;
 }
-
 /* btn */
 .buttons-wrapper {
     display: flex;
@@ -116,5 +105,17 @@ body {
     100% {
         width: 100%;
         transform: rotateZ(0) translate(0, 0);
+    }
+}
+@media (max-width:1024px) {
+    .overflow_hidden {
+        overflow: hidden !important;
+    }
+}
+
+@media (min-width:1024px) {
+    .bg_img {
+        background-image: url('/images/png/hero_img.png') !important;
+        background-size: contain;
     }
 }

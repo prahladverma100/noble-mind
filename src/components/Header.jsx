@@ -9,9 +9,9 @@ const Header = () => {
   function setopen() {
     setshow(!show);
     if (show === false) {
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.add("overflow_hidden");
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove("overflow_hidden");
     }
   }
   const Myarray =
@@ -24,7 +24,7 @@ const Header = () => {
     ];
 
   return (
-    <div className=' bg_img bg-no-repeat min-h-[810px] bg-center relative' id='home'>
+    <div className=' bg_img bg-no-repeat min-h-[810px] overflow-hidden bg-center relative' id='home'>
       <Image className=' absolute left-[1%] bottom-0' src={'/images/png/trangel.png'} width={70} height={95} alt="trangel" />
       <div className='  max-w-[1140px] px-3 mx-auto'>
         <div className=' flex items-center justify-between my-[19px]'>
@@ -32,7 +32,7 @@ const Header = () => {
             <Image src={'/images/png/noble_logo.png'} width={221} height={38} alt="logo" />
           </div>
           <div className='flex items-center gap-3'>
-            <ul className={`${show ? "left-0" : "left-[100%]"} flex flex-col lg:flex-row items-center fixed lg:static gap-5 bg-red-500 max-lg:w-full h-screen lg:h-full min-[100%] lg:bg-transparent justify-center lg:justify-normal transition-all duration-300 ease-linear top-0  z-20`}>
+            <ul className={`${show ? "left-0" : "left-[100%]"} flex flex-col lg:flex-row items-center fixed lg:static gap-5 bg-white max-lg:w-full h-screen lg:h-full min-[100%] lg:bg-transparent justify-center lg:justify-normal transition-all duration-300 ease-linear top-0  z-20`}>
               {Myarray.map((event, index) => (
                 <li key={index}><a href={event.link} onClick={setopen} className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>{event.navlink}</a></li>
               ))}  <div className='buttons-wrapper'><button className='py-[14px] px-6 ms-4 rounded-[4px] font-Outfit font-semibold  text-white bg-[#995EEC] click-btn btn_style'>Contact Us</button></div>
