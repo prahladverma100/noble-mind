@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 function Preloader() {
-    setTimeout(() => {
-        document.getElementById("none").classList.add("hidden");
-        document.body.classList.remove("overflow-hidden");
-    }, 3000);
+    useEffect(() => {
+        setTimeout(() => {
+            document.getElementById("none").classList.add("hidden");
+            document.body.classList.remove("overflow-hidden");
+        }, 3000);
+    });
     return (
         <div>
             <div id="none" className="h-screen w-full bg-white  fixed top-0 start-0 z-50">

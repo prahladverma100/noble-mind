@@ -5,7 +5,7 @@ import ContactUs from "@/components/ContactUs";
 import Frequently from "@/components/Frequently";
 import Header from "@/components/Header";
 import LastSection from "@/components/LastSection";
-// import BackToTop from "@/components/common/BackToTop";
+import BackToTop from "@/components/common/BackToTop";
   import {useEffect} from 'react';
   import Aos from 'aos';
   import "aos/dist/aos.css"
@@ -25,7 +25,7 @@ export default function Home() {
     < ContactUs />
     <Frequently />
     <LastSection />
-    {/* < BackToTop /> */}
+    < BackToTop />
     <Preloader/>
     </div>
   );
