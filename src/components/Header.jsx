@@ -1,17 +1,26 @@
 "use client";
 import React, { useState } from 'react'
-import Hamburger from 'hamburger-react'
+// import Hamburger from 'hamburger-react'
 import Image from 'next/image'
 import { Star } from './Icon'
 
 const Header = () => {
+  const [show, setshow] = useState(false);
+  function setopen() {
+    setshow(!show);
+    if (show === false) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }
   const Myarray =
-    [{ link: 'home' },
-    { link: 'home' },
-    { link: 'home' },
-    { link: 'home' },
-    { link: 'home' },
-    { link: 'home' },
+    [{ link: '#Home', navlink: 'Home' },
+    { link: '#About', navlink: 'About Us' },
+    { link: '#Services', navlink: 'Services' },
+    { link: '#Choose', navlink: 'Why Choose Us' },
+    { link: '#Blogs', navlink: 'Blogs' },
+    { link: '#FAQ', navlink: 'FAQ' },
     ];
 
   return (
@@ -22,10 +31,28 @@ const Header = () => {
           <div className=' cursor-pointer'>
             <Image src={'/images/png/noble_logo.png'} width={221} height={38} alt="logo" />
           </div>
-          <ul className=' flex items-center gap-5'>
-            {Myarray.map((event, index) => (
-              <li><a href="#About" className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>{event.link}</a></li>
-            ))}  <div className='buttons-wrapper'><button className='py-[14px] px-6 ms-4 rounded-[4px] font-Outfit font-semibold  text-white bg-[#995EEC] click-btn btn_style'>Contact Us</button></div> </ul>
+          <div className='flex items-center gap-3'>
+            <ul className={`${show ? "left-0" : "left-[100%]"} flex flex-col lg:flex-row items-center fixed lg:static gap-5 bg-red-500 max-lg:w-full h-screen lg:h-full min-[100%] lg:bg-transparent justify-center lg:justify-normal transition-all duration-300 ease-linear top-0  z-20`}>
+              {Myarray.map((event, index) => (
+                <li key={index}><a href={event.link} onClick={setopen} className=' text-base font-normal font-Exo hover:text-[#131200] text-[#5A594D]'>{event.navlink}</a></li>
+              ))}  <div className='buttons-wrapper'><button className='py-[14px] px-6 ms-4 rounded-[4px] font-Outfit font-semibold  text-white bg-[#995EEC] click-btn btn_style'>Contact Us</button></div>
+            </ul>
+
+
+            <div onClick={setopen}>
+              {show ? (
+                <div className="flex lg:hidden flex-col relative z-50 justify-between w-[24px] h-[24px] cursor-pointer  ">
+                  <span className="bg-[#131200] w-full h-[2px] relative z-50 mb-[3px] transition-all ease-linear duration-300 rotate-[53deg] -bottom-[11px]"></span>
+                  <span className="bg-[#131200] w-full h-[2px] relative z-50 mb-[3px] transition-all ease-linear duration-300 -rotate-[56deg] bottom-[8px]"></span>
+                </div>
+              ) : (
+                <div className=" flex lg:hidden flex-col  z-50 justify-between w-[24px] h-[24px] cursor-pointer relative ">
+                  <span className="bg-[#5a594d] w-full h-[2px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
+                  <span className="bg-[#5a594d]  w-full h-[2px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
+                  <span className="bg-[#5a594d] w-full h-[2px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
+                </div>
+              )}
+            </div></div>
         </div>
         <div className=' flex-row lg:pt-[138px] pt-5' data-aos="fade-right">
           <div className=' lg:w-7/12 w-full'>
@@ -38,6 +65,7 @@ const Header = () => {
           </div>
         </div>
         <Image className=' lg:hidden mx-auto' src={'/images/png/hero.png'} width={598} height={580} alt="hero" />
+
       </div>
     </div>
   )

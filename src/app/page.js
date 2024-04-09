@@ -9,7 +9,7 @@ import LastSection from "@/components/LastSection";
   import {useEffect} from 'react';
   import Aos from 'aos';
   import "aos/dist/aos.css"
-// import Preloader from "@/components/common/Preloader";
+import Preloader from "@/components/common/Preloader";
 export default function Home() {
      useEffect(() => {
        Aos.init({
@@ -18,7 +18,7 @@ export default function Home() {
        });
      }, [])
  
-  return ( <div className="">
+  return ( < div className = "overflow_hidden" >
     <Header />
     <AboutUs />
     <ChooseUs/>
@@ -26,7 +26,7 @@ export default function Home() {
     <Frequently />
     <LastSection />
     {/* < BackToTop /> */}
-    {/* <Preloader/> */}
+    <Preloader/>
     </div>
   );
 }

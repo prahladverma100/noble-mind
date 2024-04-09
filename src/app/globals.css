@@ -17,11 +17,9 @@
     background-size: contain;
     background-image: none !important;
 }
-
 .overflow_hidden {
     overflow: hidden !important;
 }
-
 html,
 body {
     scroll-behavior: smooth;
