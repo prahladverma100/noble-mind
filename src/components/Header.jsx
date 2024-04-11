@@ -26,7 +26,7 @@ const Header = () => {
     ];
 
   return (
-    <div className=' bg_img bg-no-repeat min-h-[810px] overflow-hidden bg-center relative' id='home'>
+    <div className=' bg_img bg-no-repeat min-h-[750px] md:min-h-[810px] overflow-hidden bg-center relative' id='home'>
       <Image className=' absolute left-[1%] bottom-0' src='/images/webp/trangel.webp' width={70} height={95} alt="trangel" />
       <div className='  max-w-[1140px] px-3 mx-auto'>
         <div className=' flex items-center justify-between my-[19px]'>
@@ -58,7 +58,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className=' flex-row lg:pt-[138px] pt-5' data-aos="fade-right">
+        <div className=' flex-row lg:pt-[138px] pt-0' data-aos="fade-right">
           <div className=' lg:w-7/12 w-full'>
             <div className=' flex items-center'>
               <Star />

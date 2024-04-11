@@ -22,7 +22,7 @@ const Frequently = () => {
             <Image className=' absolute top-[8%] left-[1%] hidden sm:block' src={'/images/webp/trangel.webp'} height={95} width={70} alt="trangel" />
             <Image className=' absolute bottom-[18%] left-[1%] hidden sm:dlock' src={'/images/webp/trangel.webp'} height={95} width={70} alt="trangel" />
             <div className=' mx-auto px-3 max-w-[1140px]'>
-                <h3 className=' font-Outfit text-5xl leading-[57.6px] text-[#131200] text-center' data-aos="fade-down"
+                <h3 className=' font-Outfit text-3xl md:text-4xl lg:text-5xl leading-[39px] md:leading-[44px] lg:leading-[57.6px] text-[#131200] text-center' data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="900">Frequently <span className=' font-semibold'>Asked Questions</span></h3>
                 <p className=' font-Exo font-normal text-base opacity-[70%] text-center text-[#131200] pt-4 pb-[52px]' data-aos="fade-down"
@@ -71,7 +71,7 @@ const Frequently = () => {
                     </Accordion>
 
                 </div>
-                <div className=' bg_img1 translate-y-[30%] bg-cover rounded-[20px] px-3 py-14 bg-no-repeat bg-center'>
+                <div className=' bg_img1 lg:translate-y-[30%] translate-y-[10%] bg-cover rounded-[20px] px-3 py-14 bg-no-repeat bg-center'>
                     <h3 className=' font-Outfit text-3xl md:text-4xl lg:text-5xl leading-[57.6px] text-center text-white' data-aos="fade-down"
                         data-aos-easing="linear"
                         data-aos-duration="900">Subscribe to our <span className=' font-semibold'>Newsletter!</span></h3>
