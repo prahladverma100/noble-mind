@@ -8,18 +8,19 @@
 * {
     scroll-behavior: smooth;
 }
+
 .bg_img {
-    background-image: url('/images/png/hero_img.png') !important;
+    background-image: url('/images/webp/hero_img.webp') !important;
     background-size: contain;
     background-image: none !important;
 }
 
 .bg_img1 {
-    background-image: url('/images/png/nwslatter.png') !important;
+    background-image: url('/images/webp/nwslatter.webp') !important;
 }
 
 .bg_footer {
-    background-image: url('/images/png/footer.png') !important;
+    background-image: url('/images/webp/footer.webp') !important;
 }
 
 ::placeholder {
@@ -44,6 +45,7 @@
     transition: all .3s linear !important;
     outline: none !important;
 }
+
 /* btn */
 .buttons-wrapper {
     display: flex;
@@ -107,15 +109,17 @@
         transform: rotateZ(0) translate(0, 0);
     }
 }
+
 @media (max-width:1024px) {
     .overflow_hidden {
         overflow: hidden !important;
     }
+    
 }
 
 @media (min-width:1024px) {
     .bg_img {
-        background-image: url('/images/png/hero_img.png') !important;
+        background-image: url('/images/webp/hero_img.webp') !important;
         background-size: contain;
     }
 }

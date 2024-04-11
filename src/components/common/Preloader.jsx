@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 function Preloader() {
@@ -12,7 +13,7 @@ function Preloader() {
             <div id="none" className="h-screen w-full bg-white  fixed top-0 start-0 z-50">
                 <div className="flex justify-center items-center h-screen">
                     <div className=' animate-bounce relative'>
-                        <Image src={'/images/png/noble_logo.png'} width={221} height={38} alt="logo" />
+                        <Image src={'/images/webp/noble_logo.webp'} width={221} height={38} alt="noble_logo" />
                     </div>
                 </div>
             </div>

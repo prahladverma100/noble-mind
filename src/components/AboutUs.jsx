@@ -5,11 +5,11 @@ import { Star } from './Icon'
 const AboutUs = () => {
     return (
         <div className=' lg:pt-[150px] pt-5 relative' id='About'>
-            <Image className=' absolute bottom-0 right-[1%] hidden md:block' src={'/images/png/trangel.png'} height={95} width={70} alt="trangel" />
+            <Image className=' absolute bottom-0 right-[1%] hidden md:block' src={'/images/webp/trangel.webp'} height={95} width={70} alt="trangel" />
             <div className=' mx-auto px-3 max-w-[1140px]'>
                 <div className=' lg:flex-row flex-col flex gap-5 lg:gap-[75px]'>
                     <div className='w-full flex justify-center lg:w-1/2' data-aos="fade-right">
-                        <Image className=' flex justify-center' src={'/images/png/eg2.png'} height={567} width={544} alt="eg2" />
+                        <Image className=' flex justify-center' src={'/images/webp/eg2.webp'} height={567} width={544} alt="eg2" />
                     </div>
                     <div className='w-full lg:w-1/2' data-aos="fade-left">
                         <div className=' flex'>

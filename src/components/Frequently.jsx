@@ -18,9 +18,9 @@ const Frequently = () => {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
     return (
         <div className=' lg:pt-[150px] pt-5 relative' id='FAQ'>
-            <Image className=' absolute top-[42%] hidden lg:block right-[1%]' src={'/images/png/trangel.png'} height={95} width={70} alt="trangel" />
-            <Image className=' absolute top-[8%] left-[1%] hidden sm:block' src={'/images/png/trangel.png'} height={95} width={70} alt="trangel" />
-            <Image className=' absolute bottom-[18%] left-[1%] hidden sm:dlock' src={'/images/png/trangel.png'} height={95} width={70} alt="trangel" />
+            <Image className=' absolute top-[42%] hidden lg:block right-[1%]' src={'/images/webp/trangel.webp'} height={95} width={70} alt="trangel" />
+            <Image className=' absolute top-[8%] left-[1%] hidden sm:block' src={'/images/webp/trangel.webp'} height={95} width={70} alt="trangel" />
+            <Image className=' absolute bottom-[18%] left-[1%] hidden sm:dlock' src={'/images/webp/trangel.webp'} height={95} width={70} alt="trangel" />
             <div className=' mx-auto px-3 max-w-[1140px]'>
                 <h3 className=' font-Outfit text-5xl leading-[57.6px] text-[#131200] text-center' data-aos="fade-down"
                     data-aos-easing="linear"

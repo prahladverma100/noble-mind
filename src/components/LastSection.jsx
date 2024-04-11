@@ -7,7 +7,7 @@ const LastSection = () => {
             <div className=' mx-auto px-3 max-w-[1140px]'>
                 <div className=' md:flex-row flex flex-col'>
                     <div className='w-full md:w-8/12 '>
-                        <Image className=' cursor-pointer' src={'/images/png/footer_img.png'} width={241} height={42} alt="footer_img" />
+                        <Image className=' cursor-pointer' src={'/images/webp/footer_img.webp'} width={241} height={42} alt="footer_img" />
                         <p className=' font-Exo font-normal text-base text-white md:pb-2 pb-5 pt-7'>Follow Us</p>
                         <div className=' flex gap-4 '>
                             <a href="https://www.facebook.com/" className=' cursor-pointer hover:translate-y-[-5px] ease-in-out duration-300'><Facebook /></a>

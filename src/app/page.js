@@ -18,7 +18,7 @@ export default function Home() {
        });
      }, [])
  
-  return ( < div className = "overflow_hidden" >
+  return ( < div className = "overflow-hidden" >
     <Header />
     <AboutUs />
     <ChooseUs/>

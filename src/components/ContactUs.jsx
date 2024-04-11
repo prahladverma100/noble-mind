@@ -35,7 +35,7 @@ const ContactUs = () => {
 
                     </div>
                     <div className='w-full flex justify-center pt-3 lg:pt-0 lg:w-1/2' data-aos="fade-left">
-                        <Image className=' flex justify-center' src={'/images/png/contactus.png'} width={598} height={580} alt="contactus" />
+                        <Image className=' flex justify-center' src={'/images/webp/contactus.webp'} width={598} height={580} alt="contactus" />
                     </div>
 
                 </div>
